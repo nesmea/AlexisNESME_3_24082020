@@ -1,0 +1,548 @@
+@font-face {
+  font-family: "shrikhand";
+  src: url("fonts/shrikhand/shrikhand-regular-webfont.woff2") format("woff2"), url("fonts/shrikhand/shrikhand-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotobold";
+  src: url("fonts/roboto/roboto-bold-webfont.woff2") format("woff2"), url("fonts/roboto/roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoitalic";
+  src: url("fonts/roboto/roboto-italic-webfont.woff2") format("woff2"), url("fonts/roboto/roboto-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotomedium";
+  src: url("fonts/roboto/roboto-medium-webfont.woff2") format("woff2"), url("fonts/roboto/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoregular";
+  src: url("fonts/roboto/roboto-regular-webfont.woff2") format("woff2"), url("fonts/roboto/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotothin";
+  src: url("fonts/roboto/roboto-thin-webfont.woff2") format("woff2"), url("fonts/roboto/roboto-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html, body {
+  margin: 0;
+}
+
+@keyframes body {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#loader-before .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#loader-before .circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation-name: loading;
+  animation-duration: 2.5s;
+  animation-direction: normal;
+  transform-origin: bottom center;
+  position: relative;
+}
+@keyframes loading {
+  0% {
+    transform: translateY(0px);
+    background-color: #6829fc;
+    opacity: 100%;
+  }
+  50% {
+    transform: translateY(50px);
+    background-color: #c84aef;
+  }
+  100% {
+    transform: translateY(0px);
+    background-color: #fc2957;
+    display: none;
+  }
+}
+#loader-before .circle-1 {
+  animation-delay: 0.1s;
+}
+#loader-before .circle-2 {
+  animation-delay: 0.2s;
+}
+#loader-before .circle-3 {
+  animation-delay: 0.3s;
+}
+#loader-before .circle-4 {
+  animation-delay: 0.4s;
+}
+#loader-before .circle-5 {
+  animation-delay: 0.5s;
+}
+#loader-before .circle-6 {
+  animation-delay: 0.6s;
+}
+#loader-before .circle-7 {
+  animation-delay: 0.7s;
+}
+#loader-before .circle-8 {
+  animation-delay: 0.8s;
+}
+
+#body-after {
+  opacity: 0;
+  animation-name: body;
+  animation-duration: 2.5s;
+  animation-delay: 2.75s;
+  animation-fill-mode: forwards;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  font-family: "shrikhand";
+  font-size: 17px;
+  box-shadow: 0 8px 6px -6px rgba(34, 34, 34, 0.295);
+  z-index: 2;
+  position: relative;
+}
+
+.icon {
+  width: 17px;
+  height: 17px;
+  display: inline-flex;
+  flex-direction: row;
+  margin-right: 0.8rem;
+}
+.icon-localisation {
+  padding-top: 0.2em;
+  color: #353535;
+}
+
+#second-header {
+  height: 55px;
+  width: 100%;
+  background: #eaeaea;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+#second-header p {
+  display: inline-flex;
+  flex-direction: row;
+  font-family: "robotomedium";
+  color: #353535;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#description {
+  height: 300px;
+  width: 100%;
+  display: relative;
+}
+@media (max-width: 510px) {
+  #description {
+    height: 350px;
+  }
+}
+#description h2 {
+  font-family: "robotomedium";
+  font-size: 30px;
+  width: 30em;
+  padding-top: 1em;
+}
+@media (max-width: 900px) {
+  #description h2 {
+    width: 20em;
+  }
+}
+@media (max-width: 600px) {
+  #description h2 {
+    width: 10em;
+  }
+}
+#description p {
+  font-family: "robotothin";
+  font-size: 20px;
+  width: 50em;
+  padding-top: 2em;
+}
+@media (max-width: 1010px) {
+  #description p {
+    width: 40em;
+    font-size: 18px;
+  }
+}
+@media (max-width: 720px) {
+  #description p {
+    width: 30em;
+    font-size: 16px;
+  }
+}
+@media (max-width: 510px) {
+  #description p {
+    width: 20em;
+    font-size: 14px;
+  }
+}
+#description h2, #description p {
+  text-align: center;
+  margin: auto;
+}
+
+#explore {
+  height: 280px;
+  width: 100%;
+  background: #f6f6f6;
+}
+#explore h2 {
+  margin: 0;
+  padding-top: 1.5em;
+  text-align: center;
+  font-family: "robotomedium";
+}
+#explore h3 {
+  text-align: center;
+  margin-top: 2em;
+  font-family: "robotothin";
+  font-size: 18px;
+  color: #353535;
+}
+#explore a {
+  font-family: "robotoregular";
+  font-size: 15px;
+  color: white;
+  width: 1em;
+}
+#explore a:hover {
+  color: #8a54b6;
+}
+#explore-button {
+  background: linear-gradient(-10deg, #9356DC, #FF79DA);
+  border: 1px #8a54b6 solid;
+  border-radius: 30px;
+  height: 50px;
+  width: 220px;
+  display: flex;
+  margin: auto;
+  margin-top: 2em;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.308);
+}
+#explore-button:hover {
+  background: none;
+  border: 1px #9256dc outset;
+  transition: all 250ms ease;
+}
+#explore-button p {
+  margin: auto;
+}
+
+#btn-explore {
+  width: 14em;
+  margin: auto;
+}
+
+#how-it-works {
+  font-family: "robotoregular";
+  height: 20em;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  #how-it-works {
+    height: 23em;
+  }
+}
+#how-it-works h2 {
+  margin-left: 1em;
+  margin-top: 2em;
+}
+@media (min-width: 1200px) {
+  #how-it-works h2 {
+    text-align: center;
+    padding-bottom: 2em;
+    font-size: 30px;
+  }
+}
+#how-it-works svg {
+  color: #353535;
+}
+#how-it-works p {
+  display: inline-flex;
+  flex-direction: row;
+  font-family: "robotomedium";
+  color: #353535;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  #all-btn-hiw {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10em;
+  }
+}
+
+.btn-hiw {
+  height: 4em;
+  width: 18em;
+  background: #f6f6f6;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 1em;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.171);
+}
+.btn-hiw .icon {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+.btn-hiw .icon + p {
+  padding-top: 0.3em;
+}
+.btn-hiw:hover {
+  background: #f5edff;
+  transition: all 250ms ease;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.4);
+}
+.btn-hiw:hover svg path {
+  fill: #9356dc;
+  transition: all 250ms ease;
+}
+
+#hiw-1, #hiw-2, #hiw-3 {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #9356dc;
+  border-radius: 50%;
+  margin: 20px 0 0 -10px;
+}
+#hiw-1 p, #hiw-2 p, #hiw-3 p {
+  text-align: center;
+  position: absolute;
+  padding-bottom: 5em;
+  margin: 0;
+  margin-left: 0.4em;
+  color: white;
+  font-size: 14px;
+}
+@media (min-width: 1200px) {
+  #hiw-1 p, #hiw-2 p, #hiw-3 p {
+    text-align: center;
+    font-size: 60px;
+    margin: 7px 0 0 34px;
+  }
+}
+@media (min-width: 1200px) {
+  #hiw-1, #hiw-2, #hiw-3 {
+    margin: -135px 0 0 100px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+#restaurants {
+  height: 100%;
+  background: #f6f6f6;
+}
+#restaurants h2 {
+  font-family: "robotoregular";
+  margin-left: 1em;
+  padding-top: 2em;
+}
+@media (min-width: 1200px) {
+  #restaurants h2 {
+    text-align: center;
+    padding-bottom: 2em;
+    font-size: 30px;
+  }
+}
+
+.block-restaurants {
+  height: 10em;
+  width: 40em;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 1.1em;
+}
+@media (max-width: 430px) {
+  .block-restaurants {
+    margin: 0;
+  }
+}
+.block-restaurants .new {
+  position: absolute;
+  width: 5em;
+  height: 1.8em;
+  background: #99e2d0;
+  text-align: center;
+  margin-left: 19em;
+  margin-top: 1em;
+}
+.block-restaurants .new h6 {
+  font-size: 12px;
+  color: #0a8d6d;
+  font-family: "robotoregular";
+  margin: 0;
+  margin-top: 0.4em;
+}
+@media (max-width: 400px) {
+  .block-restaurants .new {
+    margin-left: 12em;
+  }
+}
+
+#all-rest {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 430px) {
+  #all-rest {
+    justify-content: normal;
+    padding-left: 10px;
+  }
+}
+@media (max-width: 410px) {
+  #all-rest {
+    padding-left: 0;
+  }
+}
+
+#rest-1, #rest-2, #rest-3, #rest-4 {
+  height: 15em;
+  width: 25em;
+  border-radius: 20px;
+  margin-bottom: 7em;
+}
+@media (max-width: 430px) {
+  #rest-1, #rest-2, #rest-3, #rest-4 {
+    width: 17em;
+  }
+}
+@media (max-width: 400px) {
+  #rest-1, #rest-2, #rest-3, #rest-4 {
+    display: flex;
+    margin: auto;
+    margin-bottom: 7em;
+  }
+}
+#rest-1 h4, #rest-1 p, #rest-2 h4, #rest-2 p, #rest-3 h4, #rest-3 p, #rest-4 h4, #rest-4 p {
+  margin: 0;
+  margin-left: 2em;
+}
+#rest-1 h4, #rest-2 h4, #rest-3 h4, #rest-4 h4 {
+  padding-top: 1em;
+  font-family: "robotoregular";
+}
+#rest-1 p, #rest-2 p, #rest-3 p, #rest-4 p {
+  font-family: "robotothin";
+}
+#rest-1-text, #rest-2-text, #rest-3-text, #rest-4-text {
+  height: 5em;
+  width: 22.23em;
+  margin: 0;
+  background: white;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.171);
+  font-size: 18px;
+}
+@media (max-width: 400px) {
+  #rest-1-text, #rest-2-text, #rest-3-text, #rest-4-text {
+    width: 16em;
+  }
+}
+
+.proj-prev__image {
+  height: 15em;
+}
+.proj-prev__image img {
+  width: 25em;
+  height: 15em;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+@media (max-width: 400px) {
+  .proj-prev__image img {
+    width: 18em;
+  }
+}
+
+.icon-coeur {
+  position: absolute;
+  margin-top: 1.5em;
+  margin-left: 19em;
+  display: block;
+  height: 30px;
+  width: 35px;
+  color: white;
+  stroke: black;
+  stroke-width: 50;
+}
+.icon-coeur:hover {
+  color: #a76eec;
+  stroke: #a76eec;
+  transition: 200ms ease-in-out;
+}
+@media (max-width: 400px) {
+  .icon-coeur {
+    margin-left: 13em;
+  }
+}
+
+footer {
+  height: 13em;
+  background: #353535;
+}
+footer #footer-titre {
+  font-size: 18px;
+  font-family: "shrikhand";
+  margin: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-left: 1em;
+  color: white;
+}
+footer #footer-text {
+  display: inline-flex;
+  flex-direction: column;
+}
+footer a {
+  margin-left: 1em;
+}
+footer a:hover {
+  color: #ce6fc1;
+}
+footer p {
+  margin: 0;
+}
+footer a, footer p {
+  color: white;
+  font-family: "robotoregular";
+  padding-bottom: 0.5em;
+}
+
+/*# sourceMappingURL=style.css.map */
