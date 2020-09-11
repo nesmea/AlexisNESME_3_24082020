@@ -1,0 +1,21 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "Projet 3 OPENCLASSROOM",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch D:/Dév/P3/sass/main.scss D:/Dév/P3/style.css",
+    "sass-the_full_palette": "sass --watch D:/Dév/P3/the-full-plate/sass/main.scss D:/Dév/P3/the-full-plate/style.css",
+    "sass-the_enchanted_plate": "sass --watch D:/Dév/P3/the-enchanted-plate/sass/main.scss D:/Dév/P3/the-enchanted-plate/style.css",
+    "sass-bastille": "sass --watch D:/Dév/P3/bastille/sass/main.scss D:/Dév/P3/bastille/style.css",
+    "sass-le_gourmand": "sass --watch D:/Dév/P3/le-gourmand/sass/main.scss D:/Dév/P3/le-gourmand/style.css",
+    "prefix": "postcss ../style.css --use autoprefixer -d ../css-prefixed.css",
+    "prefix-the_full_plate": "postcss ../the-full-plate/style.css --use autoprefixer -d ../the-full-plate/css-prefixed.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "./P3/.git"
+  },
+  "author": "Alexis NESME",
+  "license": "ISC"
+}
